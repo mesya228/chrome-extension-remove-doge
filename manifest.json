@@ -1,0 +1,20 @@
+{
+  "name": "Doge out",
+  "version": "1.0.0",
+  "description": "Get out of doge face from twitter",
+  "manifest_version": 3,
+  "author": "Serhii Melnykov",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "run_at": "document_start",
+      "js": ["index.js"]
+    }
+  ],
+  "icons": {
+    "16": "doge16.png",
+    "32": "doge32.png",
+    "48": "doge48.png",
+    "128": "doge128.png"
+  }
+}
